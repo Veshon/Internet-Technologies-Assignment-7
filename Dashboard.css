@@ -20,7 +20,7 @@ h1{
 #cusBox{
     width: 230px;
     height: 230px;
-    background-color: white;
+    /*background-color: white;*/
     border-radius: 70px;
     position: absolute;
     top: -170px;
@@ -33,7 +33,7 @@ h1{
 #itemBox{
     width: 230px;
     height: 230px;
-    background-color: white;
+    /*background-color: white;*/
     border-radius: 70px;
     position: absolute;
     top: -170px;
@@ -45,7 +45,7 @@ h1{
 #orderBox{
     width: 230px;
     height: 230px;
-    background-color: white;
+    /*background-color: white;*/
     border-radius: 70px;
     position: absolute;
     top: -170px;
