@@ -29,6 +29,29 @@ $('#orderBox').on('click',() =>{
     $('#customerSec').css({display:'none'})
 })
 
+////////////////////////////Home Button///////////////////////////////
+
+$('#homeBtn').on('click',() =>{
+    $('#dashBoardSection').css({display:'block'})
+    $('#customerSec').css({display:'none'})
+    $('#itemSec').css({display:'none'})
+    $('#placeOrderSec').css({display:'none'})
+})
+
+$('#homeBtnItem').on('click',() =>{
+    $('#dashBoardSection').css({display:'block'})
+    $('#customerSec').css({display:'none'})
+    $('#itemSec').css({display:'none'})
+    $('#placeOrderSec').css({display:'none'})
+})
+
+$('#homeBtnOrder').on('click',() =>{
+    $('#dashBoardSection').css({display:'block'})
+    $('#customerSec').css({display:'none'})
+    $('#itemSec').css({display:'none'})
+    $('#placeOrderSec').css({display:'none'})
+})
+
 ///////////////////////////////////////////////////////////
 
 function loadCustomers() {
