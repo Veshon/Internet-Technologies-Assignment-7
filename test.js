@@ -365,7 +365,6 @@ $("#orderTBody").on('click', 'tr', function(){
     let unitPrice = $(this).find(".unitPrice-value").text();
     let total = $(this).find(".total-value").text();
 
-
     console.log("Values:"+itemCode)
     console.log("Values:"+description)
     console.log("Values:"+qtyOnHand)
