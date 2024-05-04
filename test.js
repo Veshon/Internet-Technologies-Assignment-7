@@ -138,7 +138,7 @@ $("#cusUpdate").on('click',() => {
     var mobile = $('#cusMobile').val();
 
 
-    let cusObj = {...customers[recordIndex]}
+    let cusObj = customers[recordIndex];
     cusObj.$id = id
     cusObj.$name = name
     cusObj.$address = address
@@ -189,7 +189,7 @@ function loadAllItems() {
 $("#itemTBody").on('click', 'tr', function(){
 
     let index = $(this).index();
-    record = index;
+    recordIndex = index;
 
     let id = $(this).find(".itemId-value").text();
     let desc = $(this).find(".itemDescription-value").text();
@@ -250,6 +250,11 @@ $("#itemUpdate").on('click',() => {
     var price = $('#itemPrice').val();
 
     let itemObj = items[recordIndex];
+
+    console.log(recordIndex);
+    console.log(items);
+    console.log(itemObj);
+
     itemObj.$id = id
     itemObj.$desc = desc
     itemObj.$qty = qty
@@ -352,7 +357,7 @@ $("#orderSave").on('click',() => {
 $("#orderTBody").on('click', 'tr', function(){
 
     let index = $(this).index();
-    records = index;
+    recordIndex = index;
 
     let itemCode = $(this).find(".itemCode-value").text();
     let description = $(this).find(".description-value").text();
@@ -397,7 +402,7 @@ $("#orderUpdate").on('click',() => {
     var total = $('#orderTotal').val();
 
 
-    let orderObj = {...orders[recordIndex]}
+    let orderObj = orders[recordIndex];
 
     orderObj.$id = id
     orderObj.$itemCode = itemCode
