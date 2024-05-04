@@ -390,7 +390,7 @@ $("#orderUpdate").on('click',() => {
 
     var qtyOnHand = $('#orderQtyOnHand').val();
 
-    var itemDescription = $('#orderItemDescription').val();
+    var itemDescription = $('#orderDescription').val();
 
     var cusName = $('#orderCusName').val();
 
